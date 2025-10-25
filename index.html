@@ -1,143 +1,22 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ashutosh Tiwari - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App | Ashutosh</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- Fixed Resume Button (outside of header) -->
-<a href="Ashutosh's Resume.pdf" class="resume-btn-header" download>
-  <span class="icon">⬇</span> Download Resume
-</a>
-
-<header>
-  <div class="container">
-    <div class="name-glass">
-      <h1>ASHUTOSH TIWARI</h1>
-      <p class="tagline">Aspiring Web Developer | Turning Ideas into Reality</p>
-    </div>
+ <div class="container">
+  <h1>📝 To-Do List</h1>
+  <div class="todo-box">
+    <input type="text" placeholder="Enter your task..." id="taskInput">
+    <button id="addBtn">Add</button>
   </div>
-</header>
+</div>
 
-
-
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container about-flex">
-      <img src="my_img.jpg" alt="Ashutosh Tiwari" class="profile-img">
-      <div>
-        <h2>About Me</h2>
-        <p>
-          Hi! I am a passionate web developer with a keen interest in front-end technologies.
-          Experienced in HTML, CSS, and JavaScript, I enjoy building responsive and user-friendly websites.
-          Artificial Intelligence enthusiast.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML5 & CSS3</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>DSA</li>
-        <li>Git & GitHub</li>
-        <li>UI/UX Basics</li>
-        <li>C programming Language</li>
-        <li>MySQL</li>
-
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-🔗<a href="https://expense-tracker-pi-dusky-55.vercel.app/" target="_blank" rel="noopener noreferrer">View(Click Here)</a></li>
-
-          <img src="Screenshot 2025-08-11 at 22-59-32 Expense Tracker — Runtime.png" alt="Project 1 Screenshot">
-          <h3>1.Expense Tracker App</h3>
-          <p>An Expense Tracker App helps users record and categorize their daily expenses, providing real-time insights into their spending habits.
-It enables better budgeting and financial control through easy-to-read summaries and analytics.</p>
-        </div>
-       <!-- <div class="project-card">
-          <img src="project2.jpg" alt="Project 2 Screenshot">
-          <h3>Project Two</h3>
-          <p>Another sample project with a short description. Feel free to link to the live project or GitHub repo.</p>
-        </div>
-      -->
-        <!-- Add more projects as needed -->
-      </div>
-    </div>
-  </section>
- <!-- Certificates Section -->
-<section id="certificates">
-  <div class="container">
-    <h2>Certificates</h2>
-    <ul>
-      <li>🔗 <a href="https://www.life-global.org/certificate/25e15f4c-2d39-4b82-a43c-c7f62067900e" target="_blank" rel="noopener noreferrer">Artificial intelligence course by HP LIFE - (Click Here)</a></li>
-      
-      <li>🔗 <a href="https://www.life-global.org/certificate/da7e2d6d-b4c4-489a-bd26-ef0abd03663d" target="_blank" rel="noopener noreferrer">Data science and Analytics by HP LIFE - (Click Here)</a></li>
-      
-      <li>🔗 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_hZnyg7BTskZKZ3Dgg_1754199931267_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">Tata - GenAI Powered Data Analytics Job Simulation - (Click Here)</a></li>
-      
-      <li>🔗 <a href="https://simpli-web.app.link/e/9LbdqA3G9Ub" target="_blank" rel="noopener noreferrer">Gemini for Google Workspace - (Click Here)</a></li>
-      
-      <li>🔗 <a href="https://www.credly.com/badges/a92c96e0-6121-4025-9845-f73beb2b17f3/public_url" target="_blank" rel="noopener noreferrer">Artificial Intelligence Fundamentals by IBM - (Click Here)</a></li>
-
-      <li>🔗 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_hZnyg7BTskZKZ3Dgg_1755317653710_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">Deloitte Australia - Cyber Job Simulation - (Click Here)</a></li>
-
-      <li>🔗 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_hZnyg7BTskZKZ3Dgg_1755347927785_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">Deloitte Australia - Technology  Job Simulation - (Click Here)</a></li>
-
-    </ul>
+    <ul id="taskList"></ul>
   </div>
-</section>
-
-
-  <!-- Education Section -->
-  <section id="education">
-    <div class="container education-flex">
-      <div class="education-text">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Pursuing Bachelor's of computer Applications</strong> - BBD University, Lucknow (2023 - 2026)</li>
-        </ul>
-      </div>
-      <div class="education-img">
-        <img src="BBD.jpg" alt="BBD University Logo">
-      </div>
-    </div>
-  </section>
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    
-    <p>Email: <a href="mailto:tiwariashutosh0599@gmail.com">tiwariashutosh0599@gmail.com</a></p>
-    <p>Phone: <a href="tel:+917068553710">+91 7068553710</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashutosh-tiwari-428418291" target="_blank" rel="noopener noreferrer">ashutosh-tiwari-428418291</a></p>
-    <p>GitHub: <a href="https://github.com/ashutoshtiwari07" target="_blank" rel="noopener noreferrer">ashutoshtiwari07</a></p>
-  </div>
-</section>
-
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
